@@ -10,7 +10,7 @@ dy = [1, 1, 0, -1, -1, -1, 0, 1]
 
 while 1:
     w, h = map(int,input().split())
-    if w == 0 and h == 0:
+    if w == 0 and h == 0: # 끝나는 조건
         break
 
     M = [list(map(int,input().split())) for _ in range(h)]
@@ -20,7 +20,7 @@ while 1:
 
     for i in range(h):
         for j in range(w):
-            if M[i][j] == 1 and not visited[i][j]:
+            if M[i][j] == 1 and not visited[i][j]: 
                 q.append((i,j))
                 visited[i][j] = 1
 
